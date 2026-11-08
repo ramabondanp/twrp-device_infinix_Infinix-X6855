@@ -72,7 +72,7 @@ setup_X6855() {
 	apply_X6855_patch "$root/bootable/recovery" \
 		"$root/device/infinix/Infinix-X6855/patches/0001-Change-haptics-activation-file-path.patch" || return 1
 	apply_X6855_patch "$root/bootable/recovery" \
-		"$root/device/transsion/mt6789-common/patches/0003-Refresh-removable-partitions-after-uevent.patch" || return 1
+		"$root/device/transsion/mt6789-common/patches/0003-Fallback-to-unfiltered-DRM-plane-selection.patch" || return 1
 	apply_X6855_patch "$root/bootable/recovery" \
 		"$root/device/transsion/mt6789-common/patches/0002-Respect-disabled-repacking.patch" || return 1
 	apply_X6855_patch "$root/build/make" \
